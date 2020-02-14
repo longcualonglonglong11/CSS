@@ -1,0 +1,73 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Design for Beginner</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a onclick="toggle()" class="active" href="#home">Home</a></li>
+            <li><a onclick="toggle()" href="#about">About</a></li>
+            <li><a onclick="toggle()" href="#services">Service</a></li>
+            <li><a onclick="toggle()" href="#portfolio">Portfolio</a></li>
+            <li><a onclick="toggle()" href="#contact">Contact</a></li>
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section id="home">
+        <div>
+            <h2>Responsive Website Design for Beginner</h2>
+            <p>Lorem ipsum dolor...</p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="https://i.ytimg.com/vi/CZO_niKNYio/maxresdefault.jpg" alt="">
+
+    </section>
+    <section id="about">
+        <div>
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor...</p>
+        </div>
+
+    </section>
+    <section id="services">
+        <div>
+            <h2>our services</h2>
+            <p>Lorem ipsum dolor...</p>
+        </div>
+
+    </section>
+    <section id="portfolio">
+        <div>
+            <h2>our recent work</h2>
+            <p>Lorem ipsum dolor...</p>
+        </div>
+
+    </section>
+    <section id="team">
+        <div>
+            <h2>our expert</h2>
+            <p>Lorem ipsum dolor...</p>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div>
+            <h2>contact us</h2>
+            <p>Lorem ipsum dolor...</p>
+        </div>
+
+    </section>
+   <script type="text/javascript">
+    function toggle(){
+        var header = document.getElementById("header");
+        header.classList.toggle('active');  
+    }
+   </script>
+</body>
