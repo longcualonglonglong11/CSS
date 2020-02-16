@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+    scroll-behavior: smooth;
+}
+header{
+    height: 80px;
+    background: #111;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 1000;
+}
+header .logo{
+    letter-spacing: 2px;
+    text-decoration: unset;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+.toggle{
+    display: none;
+}
+header ul li a{
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+header ul li a.active, header ul li a:hover{
+    background: #205aff;
+}
+section{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    align-items: center;
+}
+section h2{
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+section p{
+    font-size: 17px;
+}
+section img{
+    max-width: 350px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+section:nth-child(odd){
+    background: #111;
+    color: #fff;
+}
+@media(max-width: 952px){
+    
+   
+}
