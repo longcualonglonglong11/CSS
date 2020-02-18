@@ -74,5 +74,21 @@ section:nth-child(odd){
 }
 @media(max-width: 952px){
     
-   
+    header ul{
+        display: inline-block;
+        position: absolute;
+        height: calc(100vh);
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background: #111;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 100px 100px;
+    }
+    header ul li a{
+        font-size: 24px;
+    }
 }
